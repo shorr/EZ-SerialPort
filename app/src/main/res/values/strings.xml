@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EZ-SerialPort</string>
+
+    <string-array name="price_mode_array">
+        <item>0---KG</item>
+        <item>1---PCS</item>
+    </string-array>
+</resources>
