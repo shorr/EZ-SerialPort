@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -30,12 +30,12 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
 }
 
-publish {
-    userOrg = 'shorr'
-    groupId = 'cn.shorr'
-    artifactId = 'ez-serialport'
-    publishVersion = '0.0.1'
-    desc = 'Android 串口操作库'
-    website = 'http://shorr.cn'
-}
+//publish {
+//    userOrg = 'shorr'
+//    groupId = 'cn.shorr'
+//    artifactId = 'ez-serialport'
+//    publishVersion = '0.0.1'
+//    desc = 'android serial port operation library'
+//    website = 'http://shorr.cn'
+//}
 
