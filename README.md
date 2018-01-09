@@ -24,7 +24,7 @@ defaultConfig {
 	...
 
 	ndk {
-		abiFilters "armeabi", "armeabi-v7a","x86"
+		abiFilters "armeabi", "armeabi-v7a", "x86"
 	}
 }
 ```
