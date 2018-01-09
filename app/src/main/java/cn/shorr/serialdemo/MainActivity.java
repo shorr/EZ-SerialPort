@@ -57,10 +57,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //绑定串口服务
         serialPortUtil.bindService();
 
-        //串口0数据读取监听
+        //串口0数据读取监听（可在不同Activity中同时设置监听）
         serial0Read = new SerialRead(this);
-        serial0Read.registerListener(0, new Serial0ReadListener());//Or serial0Read.registerListener(new Serial0ReadListener());
-        //串口1数据读取监听
+        serial0Read.registerListener(0/*默认为0，此参数可省略*/, new Serial0ReadListener());
+        //串口1数据读取监听（可在不同Activity中同时设置监听）
         serial1Read = new SerialRead(this);
         serial1Read.registerListener(1, new Serial1ReadListener());
     }
@@ -97,8 +97,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void send0Data(String content) {
         try {
-            //发送数据 Or SerialWrite.sendData(this,content.getBytes("GBK"));
-            SerialWrite.sendData(this, 0, content.getBytes("GBK"));
+            //发送数据
+            SerialWrite.sendData(this, 0/*默认为0，此参数可省略*/, content.getBytes("GBK"));
 
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
