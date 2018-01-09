@@ -15,7 +15,7 @@ Demo效果如下：
 ### 添加依赖如下：
 ```groovy
 dependencies {
-    compile 'cn.shorr:ez-serialport:0.0.1'
+    compile 'cn.shorr:ez-serialport:0.0.2'
 }
 ```
 ### 添加适合的CPU平台ABI，如：
@@ -82,4 +82,8 @@ String[] devices = serialPortFinder.getAllDevicesPath();
 
 ```
 
+## 开发建议
 
+由于Android各硬件平台与驱动的差异性，在接收串口数据，即在通过监听获取byte[]字节数组时，一条完整的指令数据有可能被无规律分隔为多条byte[]字节数组。所以此时，需要将多条byte[]字节数组拼接为一条完整的指令，以便于指令的解析工作。
+
+所以，在串口数据格式制定的初期一定要做好相关工作。比如，可以在数据格式中指定`开始标记`、`数据长度`、`结束标记`等，这样可以方便数据的拼接以及校验等工作。

@@ -32,5 +32,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
 
 //    implementation project(':serial_port')
-    compile 'cn.shorr:ez-serialport:0.0.1'
+    compile 'cn.shorr:ez-serialport:0.0.2'
 }
