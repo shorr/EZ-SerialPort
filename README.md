@@ -6,7 +6,7 @@ EZ-SerialPort简化了串口的配置与读写操作，支持了多串口通道�
 
 Demo效果如下：
 
-<img src="/screenshot/demo.png" width=50% height=50% alt="screenshot">
+<img src="/screenshot/demo.png" width=60% height=60% alt="screenshot">
 
 
 ## Gradle 依赖
@@ -24,7 +24,7 @@ defaultConfig {
 	...
 
 	ndk {
-		abiFilters "armeabi", "armeabi-v7a"，"x86"
+		abiFilters "armeabi", "armeabi-v7a","x86"
 	}
 }
 ```
