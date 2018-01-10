@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.novoda.bintray-release'
+//apply from: "publish.gradle"
 
 android {
     compileSdkVersion 26
@@ -29,13 +29,4 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly 'com.android.support:appcompat-v7:26.+'
 }
-
-//publish {
-//    userOrg = 'shorr'
-//    groupId = 'cn.shorr'
-//    artifactId = 'ez-serialport'
-//    publishVersion = '0.0.2'
-//    desc = 'android serial port operation library'
-//    website = 'http://shorr.cn'
-//}
 

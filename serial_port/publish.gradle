@@ -1,0 +1,10 @@
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+    userOrg = 'shorr'
+    groupId = 'cn.shorr'
+    artifactId = 'ez-serialport'
+    publishVersion = '0.1.0'
+    desc = 'android serial port operation library'
+    website = 'http://shorr.cn'
+}

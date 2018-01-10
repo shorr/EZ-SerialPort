@@ -15,7 +15,7 @@ Demo效果如下：
 ### 添加依赖如下：
 ```groovy
 dependencies {
-    compile 'cn.shorr:ez-serialport:0.0.2'
+    compile 'cn.shorr:ez-serialport:0.1.0'
 }
 ```
 ### 添加适合的CPU平台ABI，如：
